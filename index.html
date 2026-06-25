@@ -40,6 +40,7 @@ nav{
   backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
   transition:box-shadow .3s;
+  overflow:visible;
 }
 nav.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.06);}
 .logo{
@@ -48,12 +49,11 @@ nav.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.06);}
 .logo span{color:var(--sage);}
 .nav-menu{display:flex;gap:20px;list-style:none;}
 .nav-menu a{
-  text-decoration:none;color:#1B1B19;
+  text-decoration:none;color:#5C7A65 !important;
   font-size:11px;letter-spacing:.06em;text-transform:uppercase;
-  transition:color .2s;font-weight:500;
+  transition:color .2s;font-weight:500 !important;
 }
-.nav-menu a:hover{color:#5C7A65;}
-.nav-menu a:hover{color:var(--dark);}
+.nav-menu a:hover{color:#3d5e46 !important;}
 .nav-btn{
   background:var(--sage);color:#fff;
   padding:9px 18px;border-radius:2px;
@@ -449,7 +449,7 @@ footer small{font-size:11px;color:rgba(255,255,255,.18);text-align:right;}
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" style="text-decoration:none;flex-shrink:0;display:inline-block;white-space:nowrap;">
+  <a href="#hero" style="text-decoration:none;flex-shrink:0;display:block;min-width:max-content;overflow:visible;">
     <div style="font-family:'Cormorant',serif;font-size:18px;color:#1B1B19;white-space:nowrap;line-height:1.2;font-weight:400;">Simon <span style="color:#5C7A65;">Naclerio</span></div>
     <div style="font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8C8478;font-weight:400;margin-top:2px;white-space:nowrap;">Kinésiologue</div>
   </a>
