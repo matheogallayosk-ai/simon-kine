@@ -40,6 +40,7 @@ nav{
   backdrop-filter:blur(16px);
   border-bottom:1px solid var(--border);
   transition:box-shadow .3s;
+  overflow:visible;
 }
 nav.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.06);}
 .logo{
@@ -449,7 +450,7 @@ footer small{font-size:11px;color:rgba(255,255,255,.18);text-align:right;}
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" style="text-decoration:none;flex-shrink:0;display:block;width:fit-content;">
+  <a href="#hero" style="text-decoration:none;position:absolute;left:40px;top:50%;transform:translateY(-50%);">
     <div style="font-family:'Cormorant',serif;font-size:18px;color:#1B1B19;white-space:nowrap;line-height:1.2;font-weight:400;">Simon <span style="color:#5C7A65;">Naclerio</span></div>
     <div style="font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8C8478;font-weight:400;margin-top:2px;">Kinésiologue</div>
   </a>
